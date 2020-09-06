@@ -1,0 +1,27 @@
+.contacts {
+  @include list-style (none, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-breakpoint) {
+    justify-content: center;
+  }
+}
+
+.contacts__item {
+  display: flex;
+
+  @media (max-width: $mobile-breakpoint) {
+    &:first-child {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.contacts__link {
+  margin-left: 15px;
+  color: $black-opacity50;
+  font-size: 16px;
+  line-height: 22px;
+}

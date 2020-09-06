@@ -6,6 +6,7 @@
     <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cd49f0b9-03bf-4dcf-8a46-fa390a436a98&lang=ru_RU"></script>
   </head>
   <body class="no-js">
     <header class="page-header">
@@ -31,12 +32,41 @@
               <a class="navigation__link" href="#" aria-label="Видео про велосипеды">Видео про велосипеды</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#" aria-label="Контакты">Контакты</a>
+              <a class="navigation__link" href="#contacts" aria-label="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+    <main class="page-main">
+    </main>
+    <footer class="page-footer page-footer__container container" id="contacts">
+      <h2 class="page-footer__title">Как нас найти?</h2>
+      <p class="page-footer__content">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <div class="page-footer__map map">
+        <div class="map__yandex" id="map"></div>
+        <picture class="map__wrap">
+          <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+          <img class="map__img" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png" alt="адрес магазина на карте">
+        </picture>
+      </div>
+      <ul class="page-footer__contacts contacts">
+        <li class="contacts__item">
+          <svg class="contacts__icon contacts_icon--email" width="26" height="20">
+            <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+          </svg>
+          <a class="contacts__link contacts__link--email button" href="#" aria-label="Написать на почту">puteshestviemechta@gmail.ru</a>
+        </li>
+        <li class="contacts__item">
+          <svg class="contacts__icon contacts_icon--phone" width="22" height="22">
+            <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+          </svg>
+          <a class="contacts__link contacts__link--phone button" href="tel:+749978468446" aria-label="Связаться по телефону">+7 (499) -784-684-46</a>
+        </li>
+      </ul>
+    </footer>
     <script src="js/main.min.js"></script>
+    <script src="js/map.js"></script>
   </body>
   </html>
