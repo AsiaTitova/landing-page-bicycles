@@ -7,27 +7,36 @@
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
-    <header class="page-header page-header__container container">
-      <nav class="page-header__navigation navigation">
-        <div class="navigation__logo logo">
-          <img class="logo__image" src="img/logo.svg" width="68" height="20" alt="Логотип MooN">
-        </div>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#" aria-label="О нас">О нас</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#" aria-label="Виды велосипедов">Виды велосипедов</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#" aria-label="Видео про велосипеды">Видео про велосипеды</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#" aria-label="Контакты">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+  <body class="no-js">
+    <header class="page-header">
+      <div class="page-header__container container">
+        <nav class="page-header__navigation navigation">
+          <img class="navigation__logo logo" src="img/logo.svg" width="68" height="20" alt="Логотип MooN">
+          <button class="navigation__toggler toggler toggler--menu button no-js__toggler" type="button" aria-label="Переключатель меню">
+            <svg class="toggler__icon toggler__icon--menu" width="30" height="30">
+              <use xlink:href="img/sprite_auto.svg#icon-toggler"></use>
+            </svg>
+            <svg class="toggler__icon toggler__icon--cross" width="15" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="navigation__list no-js__navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#" aria-label="О нас">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#" aria-label="Виды велосипедов">Виды велосипедов</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#" aria-label="Видео про велосипеды">Видео про велосипеды</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#" aria-label="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <script src="js/main.min.js"></script>
   </body>
   </html>

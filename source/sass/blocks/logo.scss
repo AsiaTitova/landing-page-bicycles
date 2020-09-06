@@ -1,0 +1,6 @@
+.logo {
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+    align-self: center;
+  }
+}

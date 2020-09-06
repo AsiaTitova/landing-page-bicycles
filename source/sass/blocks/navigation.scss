@@ -1,0 +1,102 @@
+.navigation {
+  @media (max-width: $tablet-breakpoint) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.navigation__logo {
+  display: none;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+  }
+}
+
+.navigation__toggler {
+  display: none;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+  }
+}
+
+.navigation__list {
+  @include list-style (none, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: none;
+    position: absolute;
+    top: 50px;
+    padding-top: 100px;
+    padding-bottom: 138px;
+    width: 100%;
+    background-color: $white;
+  }
+}
+
+.navigation__item {
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.navigation__link {
+  display: block;
+  color: $white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+    position: relative;
+    padding: 17px 35px 17px 16px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: $dark-grey;
+    text-align: left;
+    background-color: $grey-blue;
+    opacity: 1;
+
+    &::before {
+      @include pseudo ("", absolute, 25px, 25px);
+      top: 17px;
+      right: 18px;
+      background-image: url("../img/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

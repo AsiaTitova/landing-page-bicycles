@@ -1,0 +1,11 @@
+.page-header {
+  background-color: $black;
+}
+
+.page-header__container {
+  padding: 21px 184px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 0;
+  }
+}

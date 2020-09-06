@@ -81,6 +81,14 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("js", async function () {
+  return pipeline(
+    gulp.src("source/js/**/*.js"),
+    uglify(),
+    rename({suffix: ".min"}),
+    gulp.dest("build/js"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
