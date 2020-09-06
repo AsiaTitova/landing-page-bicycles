@@ -1,14 +1,14 @@
 .page-footer__container {
   position: relative;
   bottom: 0;
-  padding: 75px 132px 98px 132px;
+  padding: 249px 132px 98px 132px;
 
   @media (max-width: $tablet-breakpoint) {
-    padding: 35px 35px 52px 35px;
+    padding: 155px 35px 52px 35px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding: 35px 0;
+    padding: 119px 0 35px 0;
   }
 }
 

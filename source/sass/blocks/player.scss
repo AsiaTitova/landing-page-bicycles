@@ -1,0 +1,54 @@
+.player__video {
+  width: 929px;
+  height: 522px;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 503px;
+    height: 282px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 288px;
+    height: 162px;
+  }
+}
+
+.player__button {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 229px;
+  left: 432px;
+  background-color: $blue;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 13px 18px;
+
+  &:hover,
+  &focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 90px;
+    height: 90px;
+    top: 96px;
+    left: 206px;
+    background-size: 18px 25px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 65px;
+    height: 65px;
+    top: 48px;
+    left: 122px;
+    background-size: 13px 18px;
+  }
+}

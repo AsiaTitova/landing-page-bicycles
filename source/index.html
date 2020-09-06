@@ -26,10 +26,10 @@
               <a class="navigation__link" href="#facts" aria-label="О нас">О нас</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#" aria-label="Виды велосипедов">Виды велосипедов</a>
+              <a class="navigation__link" href="#types" aria-label="Виды велосипедов">Виды велосипедов</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#" aria-label="Видео про велосипеды">Видео про велосипеды</a>
+              <a class="navigation__link" href="#video" aria-label="Видео про велосипеды">Видео про велосипеды</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#contacts" aria-label="Контакты">Контакты</a>
@@ -62,7 +62,7 @@
           </ol>
         </div>
       </section>
-      <section class="types">
+      <section class="types" id="types">
         <div class="types__container container">
           <h2 class="types__title">Виды велосипедов</h2>
           <ul class="types__list">
@@ -80,26 +80,43 @@
             <li class="types__item types__item--second">
               <picture class="types__picture">
                 <source media="(min-width: 1024px)" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 768px)" srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x" type="image/webp">
-                  <source srcset="img/mountain-bike-mobile@1x.webp 1x, img/mountain-bike-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1024px)" srcset="img/mountain-bike-desktop@1x.png 1x, img/mountain-bike-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/mountain-bike-tablet@1x.png 1x, img/mountain-bike-tablet@2x.png 2x">
-                  <img class="types__img types__img--second" src="img/mountain-bike-mobile@1x.png" srcset="img/mountain-bike-mobile@2x.png" alt="пример горного велосипеда">
+                <source media="(min-width: 768px)" srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/mountain-bike-mobile@1x.webp 1x, img/mountain-bike-mobile@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/mountain-bike-desktop@1x.png 1x, img/mountain-bike-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/mountain-bike-tablet@1x.png 1x, img/mountain-bike-tablet@2x.png 2x">
+                <img class="types__img types__img--second" src="img/mountain-bike-mobile@1x.png" srcset="img/mountain-bike-mobile@2x.png" alt="пример горного велосипеда">
               </picture>
               <a class="types__link" href="#" aria-label="Смотреть горные велосипеды">Горный велосипед</a>
             </li>
             <li class="types__item types__item--third">
               <picture class="types__picture">
                 <source media="(min-width: 1024px)" srcset="img/road-bike-desktop@1x.webp 1x, img/children-bike-desktop@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 768px)" srcset="img/children-bike-tablet@1x.webp 1x, img/children-bike-tablet@2x.webp 2x" type="image/webp">
-                  <source srcset="img/children-bike-mobile@1x.webp 1x, img/children-bike-mobile@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1024px)" srcset="img/children-bike-desktop@1x.png 1x, img/children-bike-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/children-bike-tablet@1x.png 1x, img/children-bike-tablet@2x.png 2x">
-                  <img class="types__img types__img--third" src="img/children-bike-mobile@1x.png" srcset="img/children-bike-mobile@2x.png" alt="пример детского велосипеда">
+                <source media="(min-width: 768px)" srcset="img/children-bike-tablet@1x.webp 1x, img/children-bike-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/children-bike-mobile@1x.webp 1x, img/children-bike-mobile@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="img/children-bike-desktop@1x.png 1x, img/children-bike-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/children-bike-tablet@1x.png 1x, img/children-bike-tablet@2x.png 2x">
+                <img class="types__img types__img--third" src="img/children-bike-mobile@1x.png" srcset="img/children-bike-mobile@2x.png" alt="пример детского велосипеда">
               </picture>
               <a class="types__link" href="#" aria-label="Смотреть десткие велосипеды">Детский велосипед</a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="video" id="video">
+        <div class="video__container container">
+          <h2 class="video__title">Видео про велосипеды</h2>
+          <p class="video__content">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <div class="video__player player">
+            <button class="player__button button" type="button" aria-label="Запустить видео о велосипедах"></button>
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/video-desktop@1x.png 1x, img/video-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.png 1x, img/video-tablet@2x.png 2x">
+              <img class="player__video" src="img/video-mobile@1x.png" srcset="img/video-mobile@2x.png" alt="видеоролик о велосипедах">
+            </picture>
+          </div>
         </div>
       </section>
     </main>
