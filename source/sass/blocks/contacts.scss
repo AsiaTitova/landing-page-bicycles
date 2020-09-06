@@ -1,11 +1,17 @@
 .contacts {
   @include list-style (none, 0, 0);
+  padding: 0 220px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 0 105px;
+  }
 
   @media (max-width: $mobile-breakpoint) {
     justify-content: center;
+    padding: 0 20px;
   }
 }
 

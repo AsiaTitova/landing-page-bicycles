@@ -1,5 +1,5 @@
 .facts__container {
-  padding: 130px 0 150px 0;
+  padding: 130px 28px 150px 28px;
 
   @media (max-width: $tablet-breakpoint) {
     padding: 35px 106px 30px 106px;
@@ -13,7 +13,7 @@
 .facts__title {
   margin: 0;
   margin-bottom: 50px;
-  color: $black-grey;
+  color: $black-gray;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
