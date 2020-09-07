@@ -5,12 +5,17 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 100%;
+  }
 }
 
 .page-header__container {
   padding: 21px 196px;
 
   @media (max-width: $tablet-breakpoint) {
+    width: 100%;
     padding: 0;
   }
 }

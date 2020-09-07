@@ -8,4 +8,8 @@
   @media (max-width: $mobile-breakpoint) {
     @include wrapper ($mobile-width, 0 auto);
   }
+
+  @media (max-width: $mobile-width) {
+    @include wrapper ($mobile-width, 0 auto);
+  }
 }
