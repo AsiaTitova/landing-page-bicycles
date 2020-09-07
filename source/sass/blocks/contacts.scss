@@ -30,4 +30,13 @@
   color: $black-opacity50;
   font-size: 16px;
   line-height: 22px;
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }

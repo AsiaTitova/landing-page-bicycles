@@ -1,5 +1,10 @@
 .page-header {
-  background-color: $light-black;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
 }
 
 .page-header__container {

@@ -1,5 +1,7 @@
 .toggler {
   @media (max-width: $tablet-breakpoint) {
+    position: relative;
+    z-index: 1;
     margin-left: auto;
     padding: 0;
     width: 50px;
@@ -11,12 +13,19 @@
       background-color: $blue;
     }
 
+    &--cross {
+      background-color: transparent;
+      padding: 13px;
+    }
+
     &:hover,
     &:focus {
+      background-color: $blue;
       opacity: 0.7;
     }
 
     &:active {
+      background-color: $blue;
       opacity: 0.3;
     }
   }
@@ -28,4 +37,14 @@
   &--cross {
     display: none;
   }
+}
+
+.toggler--cross .toggler__icon--cross {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.toggler--cross .toggler__icon--menu {
+  display: none;
 }

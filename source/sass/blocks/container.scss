@@ -2,7 +2,7 @@
   @include wrapper ($desktop-width, 0 auto);
 
   @media (max-width: $tablet-breakpoint) {
-    @include wrapper ($tablet-width, 0 auto);
+    width: $tablet-width;
   }
 
   @media (max-width: $mobile-breakpoint) {
