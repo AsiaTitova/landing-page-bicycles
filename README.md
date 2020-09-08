@@ -1,3 +1,4 @@
+
 bike shop MooN
 -------------------------------------------------- -------------------------------------------------- -
 MooN bike shop landing page.
@@ -15,6 +16,9 @@ Also using node.js, GIT
 Installation
 ------------
 It is recommended to install the node.js modules from the package.json file before starting the project --- npm instull
+
+To start building the project use the command --- npm run build
+
 To start the local server command --- npm start
 
 Author
@@ -43,7 +47,10 @@ kutsanastasia@yandex.ru
 Установка
 ------------
 Перед запуском проекта рекомендуется установить модули node.js из файла package.json --- команда npm instull
-Чтобы запустить локальный сервер используйте команду npm start
+
+Чтобы запустить сборку проекта используйте команду --- npm run build
+
+Чтобы запустить локальный сервер используйте команду --- npm start
 
 Автор
 ------------
