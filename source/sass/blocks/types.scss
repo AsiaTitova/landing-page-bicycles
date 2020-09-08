@@ -6,11 +6,11 @@
   padding: 150px 0 147px 0;
 
   @media (max-width: $tablet-breakpoint) {
-    padding: 50px 0 70px 0;
+    padding: 50px 0 72px 0;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding: 50px 0 52px 0;
+    padding: 52px 0 52px 0;
   }
 }
 
@@ -25,6 +25,8 @@
 
   @media (max-width: $tablet-breakpoint) {
     margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 41px;
   }
 }
 
@@ -127,7 +129,7 @@
     &--third {
       padding-right: 25px;
       padding-top: 20px;
-      margin-top: 50px;
+      margin-top: 30px;
     }
 
     &--third::before {
@@ -141,8 +143,12 @@
     padding-left: 25px;
     padding-right: 25px;
 
-    &:not(:last-child) {
+    &--first {
       margin-bottom: 40px;
+    }
+
+    &--second {
+      margin-bottom: 24px;
     }
 
     &--third {
