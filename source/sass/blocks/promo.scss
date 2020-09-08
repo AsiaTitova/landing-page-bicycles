@@ -28,7 +28,7 @@
 }
 
 .promo__wrap {
-  padding: 317px 0 240px 103px;
+  padding: 318px 0 240px 173px;
 
   @media (max-width: $tablet-breakpoint) {
     padding: 135px 121px 0 121px;
@@ -43,7 +43,7 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding: 120px 15px 0 15px;
+    padding: 120px 0 0 0;
     background-image: url("../img/bike-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -100,14 +100,18 @@
   opacity: 0.8;
 
   @media (max-width: $tablet-breakpoint) {
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     font-size: 18px;
     line-height: 32px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-bottom: 70px;
   }
 }
 
 .promo__form {
-  padding: 324px 230px 240px 0;
+  padding: 324px 162px 240px 0;
 
   @media (max-width: $tablet-breakpoint) {
     @include wrapper ($tablet-width, 0 auto);

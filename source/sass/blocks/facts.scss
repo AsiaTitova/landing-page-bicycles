@@ -1,5 +1,5 @@
 .facts__container {
-  padding: 130px 28px 150px 28px;
+  padding: 150px 28px 150px 28px;
 
   @media (max-width: $tablet-breakpoint) {
     padding: 35px 106px 30px 106px;
@@ -41,7 +41,7 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
 
     &:first-child {
       margin-bottom: 29px;
