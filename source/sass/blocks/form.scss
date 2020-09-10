@@ -32,16 +32,12 @@
   padding: 14px 10px 10px 30px;
   width: 327px;
   height: 48px;
-  color: $black-gray-opacity50;
+  color: $black;
   font-size: 15px;
   line-height: 24px;
   background-color: $white;
   border: 1px solid $light-gray;
   border-radius: 4px;
-
-  &--error {
-    border: 1px solid red;
-  }
 
   &:hover,
   &:focus {

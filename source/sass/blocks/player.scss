@@ -1,10 +1,15 @@
 .player__video {
-  width: 929px;
-  height: 522px;
+  width: 100%;
+  height: auto;
 
   @media (max-width: $tablet-breakpoint) {
     width: 503px;
     height: 282px;
+  }
+
+  @media (max-width: $breakpoint) {
+    width: 100%;
+    height: auto;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -36,12 +41,22 @@
     opacity: 0.3;
   }
 
+  @media (max-width: $desktop-breakpoint) {
+    top: 43%;
+    left: 46%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     width: 90px;
     height: 90px;
     top: 96px;
     left: 206px;
     background-size: 18px 25px;
+  }
+
+  @media (max-width: $breakpoint) {
+    top: 34%;
+    left: 43%;
   }
 
   @media (max-width: $mobile-breakpoint) {

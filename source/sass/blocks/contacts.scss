@@ -1,8 +1,7 @@
 .contacts {
   @include list-style (none, 0, 0);
-  padding: 0 200px;
+  padding: 0 195px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $tablet-breakpoint) {
@@ -17,6 +16,16 @@
 
 .contacts__item {
   display: flex;
+
+  &:first-child {
+    margin-right: 92px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    &:first-child {
+      margin-right: 0;
+    }
+  }
 
   @media (max-width: $mobile-breakpoint) {
     &:first-child {

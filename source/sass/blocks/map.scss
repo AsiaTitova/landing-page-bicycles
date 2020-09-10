@@ -4,13 +4,19 @@
 
 .map__img {
   display: block;
-  width: 957px;
-  height: 530px;
+  width: 100%;
+  height: auto;
 
   @media (max-width: $tablet-breakpoint) {
     width: 698px;
     height: 545px;
   }
+
+  @media (max-width: $breakpoint) {
+    width: 100%;
+    height: auto;
+  }
+
 
   @media (max-width: $mobile-breakpoint) {
     width: 320px;
@@ -21,13 +27,19 @@
 .map__yandex {
   position: absolute;
   z-index: 2;
-  width: 957px;
+  width: 100%;
   height: 530px;
 
   @media (max-width: $tablet-breakpoint) {
     width: 698px;
     height: 545px;
   }
+
+  @media (max-width: $breakpoint) {
+    width: 100%;
+    height: 545px;
+  }
+
 
   @media (max-width: $mobile-breakpoint) {
     width: 320px;

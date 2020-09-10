@@ -21,6 +21,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: $desktop-breakpoint) {
+    width: $width-percent;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     @include wrapper (100%, 0);
     flex-direction: column;
@@ -28,10 +32,14 @@
 }
 
 .promo__wrap {
-  padding: 318px 0 240px 173px;
+  padding: 318px 0 240px 202px;
+
+  @media (max-width: $desktop-breakpoint) {
+    padding-left: 15%;
+  }
 
   @media (max-width: $tablet-breakpoint) {
-    padding: 135px 121px 0 121px;
+    padding: 135px 121px 0;
     background-image: url("../img/bike-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -40,6 +48,11 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bike-tablet@2x.jpg");
     }
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -111,11 +124,19 @@
 }
 
 .promo__form {
-  padding: 324px 162px 240px 0;
+  padding: 324px 192px 240px 0;
+
+  @media (max-width: $desktop-breakpoint) {
+    padding-right: 15%;
+  }
 
   @media (max-width: $tablet-breakpoint) {
     @include wrapper ($tablet-width, 0 auto);
     padding: 70px 121px 35px 121px;
+  }
+
+  @media (max-width: $breakpoint) {
+    width: 100%;
   }
 
   @media (max-width: $mobile-breakpoint) {

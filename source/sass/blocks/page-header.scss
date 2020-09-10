@@ -6,15 +6,19 @@
   transform: translateX(-50%);
   background-color: transparent;
 
+  @media (max-width: $desktop-breakpoint) {
+    width: 64%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     width: 100%;
   }
 }
 
 .page-header__container {
-  padding: 21px 196px;
+  padding: 21px 225px;
 
-  @media (max-width: $tablet-breakpoint) {
+  @media (max-width: $desktop-breakpoint) {
     width: 100%;
     padding: 0;
   }

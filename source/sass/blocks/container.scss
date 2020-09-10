@@ -1,15 +1,19 @@
 .container {
   @include wrapper ($desktop-width, 0 auto);
 
+  @media (max-width: $desktop-breakpoint) {
+    width: $width-percent;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     width: $tablet-width;
   }
 
-  @media (max-width: $mobile-breakpoint) {
-    @include wrapper ($mobile-width, 0 auto);
+  @media (max-width: $breakpoint) {
+    width: $width-percent;
   }
 
-  @media (max-width: $mobile-width) {
-    @include wrapper ($mobile-width, 0 auto);
+  @media (max-width: $mobile-breakpoint) {
+    width: $mobile-width;
   }
 }

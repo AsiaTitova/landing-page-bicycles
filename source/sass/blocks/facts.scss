@@ -1,8 +1,13 @@
 .facts__container {
-  padding: 150px 28px 150px 28px;
+  padding: 150px 59px 110px;
 
   @media (max-width: $tablet-breakpoint) {
     padding: 35px 106px 30px 106px;
+  }
+
+  @media (max-width: $breakpoint) {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -13,6 +18,8 @@
 .facts__title {
   margin: 0;
   margin-bottom: 50px;
+  padding-left: 218px;
+  padding-right: 200px;
   color: $black-gray;
   font-weight: 600;
   font-size: 30px;
@@ -21,6 +28,7 @@
 
   @media (max-width: $tablet-breakpoint) {
     margin-bottom: 30px;
+    padding: 0;
     font-size: 24px;
     line-height: 41px;
   }
@@ -31,14 +39,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: $desktop-breakpoint) {
+    justify-content: space-around;
+  }
 }
 
 .facts__item {
   width: 263px;
-
-  @media (max-width: $tablet-breakpoint) {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 40px;
 
   @media (max-width: $mobile-breakpoint) {
     margin-bottom: 58px;
@@ -55,7 +64,7 @@
 
 .facts__number {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
   color: $blue;
   font-weight: bold;
   font-size: 28px;
