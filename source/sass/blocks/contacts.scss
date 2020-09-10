@@ -21,14 +21,9 @@
     margin-right: 92px;
   }
 
-  @media (max-width: $tablet-breakpoint) {
-    &:first-child {
-      margin-right: 0;
-    }
-  }
-
   @media (max-width: $mobile-breakpoint) {
     &:first-child {
+      margin-right: 0;
       margin-bottom: 22px;
     }
   }

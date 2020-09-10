@@ -9,32 +9,6 @@
     <meta name="description" content="Сайт интернет магазина по продаже велосипедов MooN">
     <meta name="Keywords" content="Велосипеды, магазин, продажа велосипедов">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=cd49f0b9-03bf-4dcf-8a46-fa390a436a98&lang=ru_RU"></script>
-    <!-- Pixel Glass -->
-    <style>
-      html {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* Mobile layout by default */
-        background-image: url("prew/mob.png");
-      }
-      /* Tablet */
-      @media (min-width: 767px) {
-        html {
-          /* Tablet layout */
-          background-image: url("prew/tab.png");
-        }
-      }
-      /* Desktop */
-      @media (min-width: 1023px) {
-        html {
-          /* Desktop layout */
-          background-image: url("prew/dec.png");
-        }
-      }
-    </style>
-    <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
-    <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
-    <!-- // Pixel Glass -->
   </head>
   <body class="no-js">
     <header class="page-header">
@@ -81,13 +55,13 @@
             <h3 class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
             <div class="form__wrap">
               <label class="form__label visually-hidden" for="name">введите имя</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="Введите Ваше Имя" aria-labelledby="Введите имя" required>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Введите Ваше Имя" aria-label="Введите имя" required>
             </div>
             <div class="form__wrap">
               <label class="form__label visually-hidden" for="tel">введите имя</label>
-              <input class="form__input" type="tel" id="tel" name="tel" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Номер в формате: 8-XXX-XXX-XXXX" placeholder="Введите Ваш номер телефона" aria-labelledby="введите номер телефона" required>
+              <input class="form__input" type="tel" id="tel" name="tel" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Номер в формате: 8-XXX-XXX-XXXX" placeholder="Введите Ваш номер телефона" aria-label="введите номер телефона" required>
             </div>
-            <button class="form__submit button" type="submit">Подобрать велосипед мечты</button>
+            <button class="form__submit button" type="submit" aria-label="Отправить данные">Подобрать велосипед мечты</button>
           </form>
         </div>
       </section>
@@ -142,7 +116,7 @@
             </li>
             <li class="types__item">
               <picture class="types__picture">
-                <source media="(max-width: 767px)" srcset="img/road-bike-mobile@1x.webp 1x, img/children-bike-mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="img/children-bike-mobile@1x.webp 1x, img/children-bike-mobile@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/children-bike-tablet@1x.webp 1x, img/children-bike-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/children-bike-desktop@1x.webp 1x, img/children-bike-desktop@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 767px)" srcset="img/children-bike-mobile@1x.png 1x, img/children-bike-mobile@2x.png 2x">

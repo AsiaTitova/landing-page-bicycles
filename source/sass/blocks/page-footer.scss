@@ -4,15 +4,15 @@
   padding: 150px 164px 98px;
 
   @media (max-width: $tablet-breakpoint) {
-    padding: 155px 35px 52px 35px;
+    padding: 66px 35px 52px;
   }
 
   @media (max-width: $breakpoint) {
-    padding: 155px 3% 52px;
+    padding: 66px 3% 52px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding: 70px 0 35px 0;
+    padding: 70px 0 35px;
   }
 }
 

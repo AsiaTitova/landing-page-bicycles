@@ -761,13 +761,13 @@ template {
   padding: 150px 164px 98px; }
   @media (max-width: 1023px) {
     .page-footer__container {
-      padding: 155px 35px 52px 35px; } }
+      padding: 66px 35px 52px; } }
   @media (max-width: 785px) {
     .page-footer__container {
-      padding: 155px 3% 52px; } }
+      padding: 66px 3% 52px; } }
   @media (max-width: 767px) {
     .page-footer__container {
-      padding: 70px 0 35px 0; } }
+      padding: 70px 0 35px; } }
 
 .page-footer__title {
   margin: 0;
@@ -878,11 +878,9 @@ template {
   display: flex; }
   .contacts__item:first-child {
     margin-right: 92px; }
-  @media (max-width: 1023px) {
-    .contacts__item:first-child {
-      margin-right: 0; } }
   @media (max-width: 767px) {
     .contacts__item:first-child {
+      margin-right: 0;
       margin-bottom: 22px; } }
 
 .contacts__link {
@@ -904,7 +902,7 @@ template {
   padding: 150px 59px 110px; }
   @media (max-width: 1023px) {
     .facts__container {
-      padding: 35px 106px 30px 106px; } }
+      padding: 35px 96px 30px; } }
   @media (max-width: 785px) {
     .facts__container {
       padding-left: 15%;
@@ -950,6 +948,9 @@ template {
 .facts__item {
   width: 263px;
   margin-bottom: 40px; }
+  @media (max-width: 1023px) {
+    .facts__item {
+      margin-bottom: 43px; } }
   @media (max-width: 767px) {
     .facts__item {
       margin-bottom: 58px; }
@@ -966,6 +967,9 @@ template {
   font-size: 28px;
   line-height: 38px;
   letter-spacing: -1.27273px; }
+  @media (max-width: 1023px) {
+    .facts__number {
+      margin-bottom: 16px; } }
   @media (max-width: 767px) {
     .facts__number {
       margin-bottom: 9px; } }
@@ -988,7 +992,7 @@ template {
   padding: 152px 30px 147px; }
   @media (max-width: 1023px) {
     .types__container {
-      padding: 50px 0 69px 0; } }
+      padding: 44px 0 69px 0; } }
   @media (max-width: 767px) {
     .types__container {
       padding: 52px 0 52px 0; } }
@@ -1155,6 +1159,10 @@ template {
 .video {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(87%, #131314), color-stop(87%, transparent));
   background-image: linear-gradient(#131314 87%, transparent 87%); }
+  @media (max-width: 1023px) {
+    .video {
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(82%, #131314), color-stop(82%, transparent));
+      background-image: linear-gradient(#131314 82%, transparent 82%); } }
 
 .video__container {
   padding: 120px 178px 0;
@@ -1206,7 +1214,8 @@ template {
       padding: 0 20%; } }
   @media (max-width: 1023px) {
     .video__content {
-      padding: 0 20px; } }
+      padding: 0 20px;
+      margin-bottom: 42px; } }
   @media (max-width: 767px) {
     .video__content {
       margin-bottom: 50px;

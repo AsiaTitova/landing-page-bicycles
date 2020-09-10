@@ -1,5 +1,9 @@
 .video {
   background-image: linear-gradient($light-black 87%, transparent 87%);
+
+  @media (max-width: $tablet-breakpoint) {
+    background-image: linear-gradient($light-black 82%, transparent 82%);
+  }
 }
 
 .video__container {
@@ -61,6 +65,7 @@
 
   @media (max-width: $tablet-breakpoint) {
     padding: 0 20px;
+    margin-bottom: 42px;
   }
 
   @media (max-width: $mobile-breakpoint) {
