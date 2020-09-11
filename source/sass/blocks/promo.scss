@@ -65,6 +65,10 @@
   }
 }
 
+.promo__ref {
+  display: block;
+}
+
 .promo__logo {
   margin-bottom: 29px;
 
@@ -127,7 +131,7 @@
   padding: 324px 192px 240px 0;
 
   @media (max-width: $desktop-breakpoint) {
-    padding-right: 15%;
+    padding-right: 6%;
   }
 
   @media (max-width: $tablet-breakpoint) {
