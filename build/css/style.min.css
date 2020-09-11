@@ -412,6 +412,9 @@ template {
   @media (max-width: 1023px) {
     .page-header {
       width: 100%; } }
+  @media (max-width: 767px) {
+    .page-header {
+      position: fixed; } }
 
 .page-header__container {
   padding: 21px 225px; }
