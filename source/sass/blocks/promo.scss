@@ -67,14 +67,14 @@
 
 .promo__ref {
   display: block;
-}
-
-.promo__logo {
-  margin-bottom: 29px;
 
   @media (max-width: $tablet-breakpoint) {
     display: none;
   }
+}
+
+.promo__logo {
+  margin-bottom: 29px;
 }
 
 .promo__content {
