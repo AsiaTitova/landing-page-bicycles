@@ -1,6 +1,6 @@
 .page-footer__container {
   position: relative;
-  bottom: 0;
+  flex: 0 0 auto;
   padding: 150px 164px 98px;
 
   @media (max-width: $tablet-breakpoint) {
@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $breakpoint) {
-    padding: 66px 3% 52px;
+    padding: 66px 4% 52px;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -62,7 +62,7 @@
   margin-bottom: 39px;
 
   @media (max-width: $tablet-breakpoint) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   @media (max-width: $mobile-breakpoint) {

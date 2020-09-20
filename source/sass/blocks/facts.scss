@@ -6,8 +6,8 @@
   }
 
   @media (max-width: $breakpoint) {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -54,11 +54,13 @@
   }
 
   @media (max-width: $tablet-breakpoint) {
-    margin-bottom: 43px;
+    margin-bottom: 41px;
+    width: 44%;
   }
 
   @media (max-width: $mobile-breakpoint) {
     margin-bottom: 58px;
+    width: 100%;
 
     &:first-child {
       margin-bottom: 29px;

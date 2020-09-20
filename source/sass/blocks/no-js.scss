@@ -1,9 +1,12 @@
 .no-js .page-header {
-  position: relative;
-  background-color: $light-black;
+  @media (max-width: $tablet-breakpoint) {
+    position: relative;
+  }
 }
 
 .no-js .navigation__list {
-  display: block;
-  position: relative;
+  @media (max-width: $tablet-breakpoint) {
+    display: block;
+    position: relative;
+  }
 }

@@ -5,6 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
+  flex: 0 0 auto;
 
   @media (max-width: $desktop-breakpoint) {
     width: 64%;
@@ -13,9 +14,14 @@
   @media (max-width: $tablet-breakpoint) {
     width: 100%;
   }
+}
 
+.page-header__show {
   @media (max-width: $mobile-breakpoint) {
     position: fixed;
+    height: 100%;
+    background-color: $white;
+    z-index: 3;
   }
 }
 
@@ -24,6 +30,10 @@
 
   @media (max-width: $desktop-breakpoint) {
     width: 100%;
+    padding: 21px 0;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
     padding: 0;
   }
 }

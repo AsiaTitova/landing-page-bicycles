@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 
   @media (max-width: $tablet-breakpoint) {
-    padding: 0 70px;
+    padding: 0 73px;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -17,12 +17,12 @@
 .contacts__item {
   display: flex;
 
-  &:first-child {
+  &:nth-child(2n-1) {
     margin-right: 92px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    &:first-child {
+    &:nth-child(2n-1) {
       margin-right: 0;
       margin-bottom: 22px;
     }
